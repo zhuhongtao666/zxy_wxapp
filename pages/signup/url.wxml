@@ -1,0 +1,19 @@
+<!--pages/signup/url.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset" >
+<view class='bg' style='background:url({{bg}}) no-repeat;'>
+    <view class="section" >
+      <view class="flex-wrp inputView" style="flex-direction:row;">
+          <input placeholder="输入需要联系qq号" name="number"  type="number" class='info-item' />
+      </view>
+    </view>
+   <view class="section" >
+      <view class="inputView" style="flex-direction:row;">
+           <input placeholder="推荐人qq号（可不填）" name="saler" style='margin-top:30rpx;'  type="number" class='info-item' />
+      </view>
+    </view>
+    <view class="btn-area">
+      <button form-type="submit" class='btn btn-submit'>提交</button>
+      <button form-type="reset" class='btn btn-rest'>重置</button>
+    </view>
+</view>
+</form>

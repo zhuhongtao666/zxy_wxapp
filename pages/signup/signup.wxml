@@ -1,0 +1,30 @@
+
+<view class="appointment">
+  <view class="app-moduler">
+    <view wx:for="{{courses}}" wx:for-index="idx" wx:for-item="item">
+      <navigator url="url?cId={{item.cId}}" class="mod-item">
+        <view class="mod-signup">
+          <image src="{{signupimg}}"></image>
+        </view>
+        <view class="mod-img">
+          <image src="{{item.cImg}}" class="mod-image"></image>
+        </view>
+        <view class="mod-title">
+          <text>{{item.cName}}</text>  
+        </view>
+        <view class="mod-info">
+          <view class="mod-icon">
+            <image src="{{iconCashsrc}}" class="icon"></image>
+          </view>
+          <view class="moinfont">单节最低心动价:{{item.cPrice}}元</view>
+        </view>
+         <view class="mod-info">
+          <view class="mod-icon">
+            <image src="{{iconsrc}}" class="icon"></image>
+          </view>
+          <view class="moinfont">{{item.cCount}}人已申请</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
